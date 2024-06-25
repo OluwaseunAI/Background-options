@@ -1,0 +1,106 @@
+
+
+body{
+  margin: 0;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url(./Sky-dawn.jpg);
+  background-size: cover;
+  transition: filter 0.8s;
+}
+
+.welcome{
+  font-size: 50px;
+  color: rgba(255, 200, 255, 0.9);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 3px ;
+}
+
+.btn{
+  padding: 5px 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  background-color: tomato;
+  border: 0.2px solid transparent;
+
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: orange;
+  transform: scale(1.6);
+  filter: brightness(0.8);
+}
+
+.blur.main-container{
+  filter: blur(3px) brightness(.65)
+}
+
+.btn-submit{
+  background-color: rgb(197, 63, 63);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-icon{
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  left: 85%;
+  top: 5%;
+}
+
+.close-icon:hover{
+  color: blue;
+  font-size: 35px;
+  transform: scale(1.3)
+}
+
+.popup-cont{
+position: fixed;
+width: 2 50px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+flex-direction: column;
+padding: 20px;
+box-shadow: 0 4px 9px rgba(0,0,0,0.4);
+border: 2px solid rgb(94, 94, 94);
+transition: all 0.75s;
+opacity: 1;
+}
+
+.hide.popup-cont{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.offer{
+  font-size: 22px;
+  margin: 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fefefe;
+}
+
+label{
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+  border: 1.5px solid;
+  padding: 5px;
+  height: 20px;
+margin: 10px 0;
+border-radius: 4px;
+}
